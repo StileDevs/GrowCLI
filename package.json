@@ -1,0 +1,40 @@
+{
+  "name": "growcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "growcli": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "nr build && node dist/index.js",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "JadlionHD <jadlion.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@antfu/ni": "^0.23.0",
+    "commander": "^12.1.0",
+    "decompress": "^4.2.1",
+    "execa": "^9.4.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.0",
+    "prompts": "^2.4.2",
+    "undici": "^6.19.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/decompress": "^4.2.7",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.7.4",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.3.0",
+    "type-fest": "^4.26.1",
+    "typescript": "^5.6.2"
+  }
+}
